@@ -14,6 +14,7 @@ export default [
             'blob:',
             'market-assets.strapi.io',
             '*.lyvex.cloud',
+            "aidynamo-images.s3.us-east-2.amazonaws.com",
           ],
           'media-src': [
             "'self'",
@@ -21,6 +22,7 @@ export default [
             'blob:',
             'market-assets.strapi.io',
             '*.lyvex.cloud', 
+            "aidynamo-images.s3.us-east-2.amazonaws.com",
           ],
           upgradeInsecureRequests: null,
         },
@@ -31,7 +33,7 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['https://aidynamo.com.mx','http://localhost:4321'],
+      origin: ['https://aidynamo.com.mx','http://localhost:4321','https://aidynamo-images.s3.us-east-2.amazonaws.com'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin' , 'Accept'],
       credentials: true
