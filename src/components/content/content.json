@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_contents",
+  "info": {
+    "displayName": "Content",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "Paragraph": {
+      "type": "blocks",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

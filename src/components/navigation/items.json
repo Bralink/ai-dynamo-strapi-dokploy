@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_navigation_items",
+  "info": {
+    "displayName": "Items",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "Service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "Children": {
+      "displayName": "Children",
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.children"
+    },
+    "Grupo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group.group"
+    }
+  }
+}
