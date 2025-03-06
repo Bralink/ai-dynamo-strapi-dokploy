@@ -36,7 +36,6 @@ export interface NavigationItems extends Struct.ComponentSchema {
   };
   attributes: {
     Children: Schema.Attribute.Component<'navigation.children', true>;
-    Grupo: Schema.Attribute.Relation<'oneToOne', 'api::group.group'>;
     Page: Schema.Attribute.Relation<'oneToOne', 'api::page.page'>;
     Service: Schema.Attribute.Relation<'oneToOne', 'api::page.page'>;
     Titulo: Schema.Attribute.String & Schema.Attribute.Required;

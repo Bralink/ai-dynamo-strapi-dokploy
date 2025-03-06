@@ -412,6 +412,7 @@ export interface ApiGroupGroup extends Struct.CollectionTypeSchema {
 export interface ApiMenuMenu extends Struct.SingleTypeSchema {
   collectionName: 'menus';
   info: {
+    description: '';
     displayName: 'Menu';
     pluralName: 'menus';
     singularName: 'menu';
